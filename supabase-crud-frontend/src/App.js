@@ -3,6 +3,7 @@ import { supabase } from "./supabaseClient";
 import Auth from "./Auth";
 import Dashboard from "./Dashboard";
 
+
 function App() {
   const [user, setUser] = useState(null);
 

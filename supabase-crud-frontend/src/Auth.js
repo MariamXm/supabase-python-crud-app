@@ -39,6 +39,7 @@ export default function Auth() {
     }
   };
 
+
   return (
     <div className="auth-container">
       <h2>LOGIN TO YOUR ACCOUNT</h2>

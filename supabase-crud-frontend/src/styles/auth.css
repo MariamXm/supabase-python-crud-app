@@ -47,12 +47,10 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
-
 .login-btn {
   background: #0070f3;
   color: #fff;
 }
-
 .signup-btn {
   background: #28a745;
   color: #fff;

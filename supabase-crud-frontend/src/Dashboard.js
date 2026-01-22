@@ -9,6 +9,7 @@ export default function Dashboard({ user }) {
   const [newName, setNewName] = useState("");
   const [newFile, setNewFile] = useState(null);
 
+  
   const fetchFiles = useCallback(async () => {
     const { data, error } = await supabase
       .from("files_metadata")
