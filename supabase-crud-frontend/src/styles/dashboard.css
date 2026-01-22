@@ -1,0 +1,154 @@
+/* Dashboard.css */
+
+.dashboard {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: Arial, sans-serif;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard__header h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dashboard__header button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dashboard__upload {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard__upload input[type="file"] {
+  padding: 6px;
+}
+
+.dashboard__upload button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2f80ed;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dashboard__divider {
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.file-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.file-card__name {
+  font-weight: 600;
+}
+
+.file-card__actions button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.file-card__actions button:nth-child(1) {
+  background: #2d9cdb;
+  color: white;
+}
+
+.file-card__actions button:nth-child(2) {
+  background: #f2c94c;
+  color: white;
+}
+
+.file-card__actions button:nth-child(3) {
+  background: #27ae60;
+  color: white;
+}
+
+.file-card__actions button:nth-child(4) {
+  background: #eb5757;
+  color: white;
+}
+
+.edit-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edit-box input[type="text"] {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.edit-box button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-box button:nth-child(2) {
+  background: #2f80ed;
+  color: white;
+}
+
+.edit-box button:nth-child(3) {
+  background: #bdbdbd;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 14px;
+  }
+
+  .dashboard__upload {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-card__actions {
+    margin-top: 10px;
+  }
+}
